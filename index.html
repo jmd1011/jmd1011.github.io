@@ -14,22 +14,20 @@
     <title>James M. Decker</title>
   </head>
   <body style="font-family: 'Roboto', sans-serif;">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="#">James M Decker</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
         <div class="collapse navbar-collapse" id="nbar">
-          <ul class="nav navbar navbar-right">
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#resume">Resume</a></li>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+            <li class="nav-item"><a href="#teaching" class="nav-link">Teaching</a></li>
+            <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
           </ul>
         </div>
       </div>
@@ -37,9 +35,65 @@
 
     <div class="jumbotron">
       <div class="container-fluid">
-        <div class="col-md-4"><img src="img/pic.jpg" class="img-responsive img-circle center-block" alt="James M Decker" id="headshot" style="width: 200px;"></div>
+        <div class="row">
+          <div class="col-md-4">
+            <span>
+              <img src="img/pic_square.jpg" class="img-responsive rounded-circle center-block" alt="Headshot" id="headshot" style="width: 200px;">
+            </span>
+            <br><br>
+            <span><a href="mailto:decker31@purdue.edu">decker31@purdue.edu</a></span><br>
+            <span><a href="https://github.com/jmd1011/">github.com/jmd1011</a></span><br>
+            <span><a href="https://twitter.com/deckeresq">@deckeresq</a></span>
+          </div>
+          <div class="col-md-8 text-left">
+            <br>
+            <h1>James M. Decker</h1>
+            <p class="lead">
+              Graduate Research Fellow and Teaching Assistant<br>
+              PhD Advisor: <a href="tiarkrompf.github.io" style="text-decoration: none;">Tiark Rompf</a><br>
+              <a href="https://purduepl.github.io/" style="text-decoration: none;">Purdue Programming Languages (PurPL)</a><br>
+              <a href="http://www.cs.purdue.edu" style="text-decoration: none;">Department of Computer Science</a><br>
+              <a href="http://www.purdue.edu" style="text-decoration: none;">Purdue University</a><br>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="container" id="about">
+        <h3>About Me</h3>
+        <p>
+          I am currently a graduate teaching assistant at Purdue University and recipient of the Ross Fellowship. I am broadly interested in programming languages, with a specific interest in <strong>how programmers learn</strong> and use these languages.
+
+          <br><br>
+
+          My research is devoted to helping programmers gain the benefits of "advanced" programming techniques, without needing to get lost in the weeds along the way.
+
+          <br><br>
+
+          With this in mind, I primarily focus on generative programming and synthesis, with the intent of applying these techniques in an educational setting.
+        </p>
+    </div>
+
+    <div class="container" id="research">
+      <h3>Publications</h3>
+      <table class="table table-condensed" id="publications">
+        <tbody>
+          <tr>
+            <td>2016</td>
+            <td>Gregory M. Essertel, Ruby Y. Tahboub, <strong>James M. Decker</strong>, Kevin J. Brown, Kunle Olukotun, Tiark Rompf</td>
+            <td><a href="https://arxiv.org/abs/1703.08219">Flare: Native Compilation for Heterogeneous Workloads in Apache Spark</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="footer" style="padding-left: 10px;padding-top: 0px;">
+      <p style="text-align: center;"></p>
+      <small>
+        Layout based on <a href="http://www.cs.cmu.edu/~mhilton/">Michael Hilton</a>. Check out his page for more exciting research!
+      </small>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
